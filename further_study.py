@@ -198,7 +198,9 @@ def custom_contains(input_list, value):
 
     """
 
-    return None
+    pass
+    # for item in input_list:
+    #     while item != value
 
 
 def custom_equality(some_list, another_list):
@@ -216,7 +218,12 @@ def custom_equality(some_list, another_list):
 
     """
 
-    return None
+    for i in range(len(some_list)):
+        for i in range(len(another_list)):
+            if some_list[i] != another_list[i]:
+                return False
+    return True            
+
 
 
 ##############################################################################
