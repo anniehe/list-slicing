@@ -1,8 +1,3 @@
-# FIXME: As of Fall 2015, this exercise got a pretty extensive re-write.
-# For Winter 2016, triple-check that all the materials are behaving
-# as expected in the main exercise, futher study, and solution.
-
-
 # Part 1: Fundamental operations on lists
 # ---------------------------------------
 #
@@ -247,7 +242,11 @@ def delete_middle(input_list):
 #
 # Please ask for a code review from an instructor/TA before proceeding.
 
+##############################################################################
+# This is the part were we actually run the doctests.
 
 if __name__ == "__main__":
     import doctest
-    doctest.testmod()
+    result = doctest.testmod()
+    if result.failed == 0:
+        print "ALL TESTS PASSED"
