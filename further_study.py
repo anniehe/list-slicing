@@ -27,7 +27,7 @@ def custom_len(input_list):
 
     len_count = 0
     for item in input_list:
-        len_count += 1    
+        len_count += 1
     return len_count
 
 
@@ -124,7 +124,7 @@ def custom_pop(input_list):
 
     """
 
-    last_item = input_list[-1] 
+    last_item = input_list[-1]
     del input_list[-1]
     return last_item
 
@@ -179,7 +179,7 @@ def custom_reverse(input_list):
 
     """
 
-    input_list = input_list[::-1]
+    input_list[:] = input_list[::-1]
 
 
 def custom_contains(input_list, value):
@@ -223,7 +223,7 @@ def custom_equality(some_list, another_list):
         for i in range(len(another_list)):
             if some_list[i] != another_list[i]:
                 return False
-    return True            
+    return True
 
 
 
